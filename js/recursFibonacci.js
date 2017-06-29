@@ -1,16 +1,15 @@
-var userNum = Number(prompt('Введіть будьласка число РЕкурсія'));
+var userNum1 = Number(prompt('Введіть число для обчислення способом Рекурсія'));
 
-function calcRecursFibonacci(userNum) {
-    if (userNum < 2) {
-        return userNum;
+function calcRecursFibonacci(userNum1) {
+    if (userNum1 < 2) {
+        return userNum1;
     }
     else {
-        return calcRecursFibonacci(userNum - 1) + calcRecursFibonacci(userNum - 2);
+        return calcRecursFibonacci(userNum1 - 1) + calcRecursFibonacci(userNum1 - 2);
     }
 }
 
-document.write(calcRecursFibonacci(userNum));
-
+document.write('<div class="calc_fib">Ви ввели число: ' + userNum1 + '<br>' + 'Число Фібоначчі = ' + '<b>' + calcRecursFibonacci(userNum1) + '</b></div>');
 
 
 
